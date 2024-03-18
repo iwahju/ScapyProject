@@ -66,8 +66,11 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
+    ## , 300,400 --> just means which one we should excute first, and we priortize the lower number
    'bookscraper.pipelines.BookscraperPipeline': 300,
+   'bookscraper.pipelines.SaveToMySQLPipeline': 400,
 }
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

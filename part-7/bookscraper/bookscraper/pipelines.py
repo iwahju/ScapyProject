@@ -72,8 +72,10 @@ class BookscraperPipeline:
 
 
         return item
-    
-import mysql.connector
+
+
+import mysql.connector 
+
     
 class SaveToMySQLPipeline:
     
